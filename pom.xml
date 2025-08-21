@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <name>EnhancePlugin</name>
-    <description>Wzmocnienia Przedmiotów - Plugin do wzmacniania zbroi i narzędzi</description>
+    <description>Wzmocnienia Przedmiotów - Plugin do wzmacniania zbroi i narzędzi (Spigot)</description>
     <url>https://github.com/meklas/enhance</url>
 
     <properties>
@@ -19,29 +19,23 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         
         <!-- Dependency versions -->
-        <paper.version>1.20.6-R0.1-SNAPSHOT</paper.version>
+        <spigot.version>1.20.6-R0.1-SNAPSHOT</spigot.version>
         <vault.version>1.7</vault.version>
         <junit.version>5.10.0</junit.version>
         <mockito.version>5.5.0</mockito.version>
     </properties>
 
     <repositories>
-        <!-- Paper -->
+        <!-- Spigot -->
         <repository>
-            <id>papermc</id>
-            <url>https://repo.papermc.io/repository/maven-public/</url>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         
         <!-- Vault -->
         <repository>
             <id>jitpack</id>
             <url>https://jitpack.io</url>
-        </repository>
-        
-        <!-- Spigot/Bukkit -->
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
         
         <!-- Sonatype -->
@@ -52,11 +46,11 @@
     </repositories>
 
     <dependencies>
-        <!-- Paper API -->
+        <!-- Spigot API -->
         <dependency>
-            <groupId>io.papermc.paper</groupId>
-            <artifactId>paper-api</artifactId>
-            <version>${paper.version}</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>${spigot.version}</version>
             <scope>provided</scope>
         </dependency>
 

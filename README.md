@@ -1,4 +1,4 @@
-# Wzmocnienia Przedmiotów - Plugin dla Paper 1.20.6
+# Wzmocnienia Przedmiotów - Plugin dla Spigot 1.20.6
 
 Plugin do wzmacniania zbroi i narzędzi z systemem trzech ścieżek ulepszeń, ryzykiem niepowodzenia i integracją z ekonomią Vault.
 
@@ -20,7 +20,7 @@ Plugin do wzmacniania zbroi i narzędzi z systemem trzech ścieżek ulepszeń, r
 
 ## Instalacja
 
-1. Upewnij się, że masz Paper 1.20.6 i Java 17
+1. Upewnij się, że masz Spigot 1.20.6 i Java 17
 2. Opcjonalnie zainstaluj Vault i plugin ekonomii
 3. Umieść plik `EnhancePlugin-1.0.0.jar` w folderze `plugins`
 4. Uruchom serwer - plugin utworzy pliki konfiguracyjne
