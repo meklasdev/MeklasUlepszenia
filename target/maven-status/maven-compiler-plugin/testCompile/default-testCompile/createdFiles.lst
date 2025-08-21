@@ -1,0 +1,5 @@
+pl/meklas/enhance/integration/PathTypeIntegrationIT.class
+pl/meklas/enhance/integration/SimpleIntegrationIT.class
+pl/meklas/enhance/model/PathTypeTest.class
+pl/meklas/enhance/model/EnhancementDataTest.class
+pl/meklas/enhance/util/RandomProviderTest.class

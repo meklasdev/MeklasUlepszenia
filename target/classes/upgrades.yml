@@ -1,0 +1,66 @@
+# Konfiguracja ścieżek ulepszeń i ich kosztów
+
+paths:
+  DEFENSE:
+    1:
+      successChance: 70
+      cost:
+        money: 500
+        items:
+          DIAMOND: 8
+    2:
+      successChance: 55
+      cost:
+        money: 2500
+        items:
+          NETHERITE_SCRAP: 4
+    3:
+      successChance: 40
+      cost:
+        money: 7000
+        items:
+          NETHERITE_INGOT: 1
+  
+  OFFENSE:
+    1:
+      successChance: 65
+      cost:
+        money: 400
+        items:
+          BLAZE_ROD: 16
+    2:
+      successChance: 50
+      cost:
+        money: 2200
+        items:
+          ECHO_SHARD: 8
+    3:
+      successChance: 35
+      cost:
+        money: 9000
+        items:
+          NETHER_STAR: 1
+  
+  UTILITY:
+    1:
+      successChance: 75
+      cost:
+        money: 300
+        items:
+          REDSTONE: 32
+    2:
+      successChance: 60
+      cost:
+        money: 1500
+        items:
+          AMETHYST_SHARD: 16
+    3:
+      successChance: 45
+      cost:
+        money: 6000
+        items:
+          SHULKER_SHELL: 4
+
+# Zachowanie przy niepowodzeniu (na przyszłość)
+onFail:
+  behavior: "DESTROY_ITEM"  # DESTROY_ITEM, DOWNGRADE, KEEP

@@ -89,11 +89,11 @@ public class DamageListener implements Listener {
         int duration = enhancement.getPath().getOffenseDuration(enhancement.getLevel()) * 20; // Konwersja na ticki
         
         // Usuń istniejący efekt Siły jeśli jest aktywny (odświeżenie)
-        attacker.removePotionEffect(PotionEffectType.INCREASE_DAMAGE);
+        attacker.removePotionEffect(PotionEffectType.STRENGTH);
         
         // Dodaj nowy efekt
         PotionEffect strengthEffect = new PotionEffect(
-            PotionEffectType.INCREASE_DAMAGE,
+            PotionEffectType.STRENGTH,
             duration,
             strengthLevel,
             false, // ambient

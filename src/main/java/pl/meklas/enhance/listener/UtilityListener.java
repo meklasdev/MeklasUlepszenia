@@ -134,7 +134,7 @@ public class UtilityListener implements Listener {
         if (shouldHaveHaste && !currentlyHasHaste) {
             // Dodaj efekt Haste
             player.addPotionEffect(new PotionEffect(
-                PotionEffectType.FAST_DIGGING,
+                PotionEffectType.HASTE,
                 Integer.MAX_VALUE, // Nieskończony czas
                 0, // Haste I
                 false, // ambient
@@ -147,7 +147,7 @@ public class UtilityListener implements Listener {
             
         } else if (!shouldHaveHaste && currentlyHasHaste) {
             // Usuń efekt Haste
-            player.removePotionEffect(PotionEffectType.FAST_DIGGING);
+            player.removePotionEffect(PotionEffectType.HASTE);
             playersWithHasteBoost.put(player.getUniqueId(), false);
             
             plugin.getLogger().fine("Usunięto efekt Haste dla gracza " + player.getName());

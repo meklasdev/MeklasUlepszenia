@@ -174,14 +174,19 @@ public class EnhanceCommand implements CommandExecutor, TabCompleter {
         // Wykonaj symulację
         sender.sendMessage(messages.get("prefix") + "§7Wykonywanie symulacji...");
         
+        // Make variables effectively final
+        final PathType finalPath = path;
+        final int finalLevel = level;
+        final int finalIterations = iterations;
+        
         plugin.getServer().getScheduler().runTaskAsynchronously(plugin, () -> {
             EnhancementService.SimulationResult result = plugin.getEnhancementService()
-                    .simulateUpgrade(path, level, iterations);
+                    .simulateUpgrade(finalPath, finalLevel, finalIterations);
             
             plugin.getServer().getScheduler().runTask(plugin, () -> {
                 sender.sendMessage(messages.get("prefix") + "§eWyniki symulacji:");
-                sender.sendMessage("§7Ścieżka: §f" + path.getDisplayName() + " §7Poziom: §f" + level);
-                sender.sendMessage("§7Iteracje: §f" + iterations);
+                sender.sendMessage("§7Ścieżka: §f" + finalPath.getDisplayName() + " §7Poziom: §f" + finalLevel);
+                sender.sendMessage("§7Iteracje: §f" + finalIterations);
                 sender.sendMessage("§7Oczekiwana szansa: §f" + result.getExpectedChance() + "%");
                 sender.sendMessage("§aSuccesses: §f" + result.getSuccesses());
                 sender.sendMessage("§cFailures: §f" + result.getFailures());
