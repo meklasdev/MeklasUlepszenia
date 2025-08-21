@@ -1,0 +1,71 @@
+# Konfiguracja GUI
+
+# Ekran informacyjny
+info:
+  title: "&8[&aWzmocnienia&8]"
+  size: 27
+  items:
+    system:
+      slot: 11
+      material: "ENCHANTED_BOOK"
+      customModelData: 0
+    paths:
+      slot: 13
+      material: "DIAMOND_SWORD"
+      customModelData: 0
+    materials:
+      slot: 15
+      material: "CHEST"
+      customModelData: 0
+    decoration:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slots: [0,1,2,3,4,5,6,7,8,9,10,12,14,16,17,18,19,20,21,22,23,24,25,26]
+
+# Ekran ulepszania
+upgrade:
+  title: "&8[&eUlepszanie&8]"
+  size: 54
+  items:
+    inputItem:
+      slot: 20
+      material: "BARRIER"
+    inputMaterial:
+      slot: 29
+      material: "BARRIER"
+    pathDefense:
+      slot: 24
+      material: "SHIELD"
+      activeColor: "GREEN_STAINED_GLASS_PANE"
+      lockedColor: "RED_STAINED_GLASS_PANE"
+      unavailableColor: "GRAY_STAINED_GLASS_PANE"
+    pathOffense:
+      slot: 33
+      material: "DIAMOND_SWORD"
+      activeColor: "GREEN_STAINED_GLASS_PANE"
+      lockedColor: "RED_STAINED_GLASS_PANE"
+      unavailableColor: "GRAY_STAINED_GLASS_PANE"
+    pathUtility:
+      slot: 42
+      material: "REDSTONE"
+      activeColor: "GREEN_STAINED_GLASS_PANE"
+      lockedColor: "RED_STAINED_GLASS_PANE"
+      unavailableColor: "GRAY_STAINED_GLASS_PANE"
+    preview:
+      slot: 22
+      material: "PAPER"
+    confirm:
+      slot: 26
+      material: "EMERALD"
+    decoration:
+      material: "GRAY_STAINED_GLASS_PANE"
+      slots: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,23,25,27,28,30,31,32,34,35,36,37,38,39,40,41,43,44,45,46,47,48,49,50,51,52,53]
+
+# Kolory dla różnych stanów
+colors:
+  active: "&a"
+  locked: "&c"
+  unavailable: "&7"
+  success: "&a"
+  fail: "&c"
+  warning: "&e"
+  info: "&b"

@@ -1,0 +1,5 @@
+-cp
+.
+-d
+build/classes
+@sources.txt
