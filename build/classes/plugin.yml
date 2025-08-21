@@ -1,0 +1,39 @@
+name: EnhancePlugin
+version: ${version}
+main: pl.meklas.enhance.EnhancePlugin
+api-version: 1.20
+author: Meklas
+description: Plugin do wzmacniania zbroi i narzędzi
+website: https://github.com/meklas/enhance
+softdepend: [Vault]
+
+commands:
+  enhance:
+    description: Główna komenda pluginu wzmocnień
+    usage: /<command> [open|upgrade|simulate|reload|giveitem]
+    aliases: [wzmocnienia]
+    permission: enhance.open
+
+permissions:
+  enhance.open:
+    description: Pozwala na otwarcie GUI informacyjnego
+    default: true
+  enhance.upgrade:
+    description: Pozwala na ulepszanie przedmiotów
+    default: true
+  enhance.admin:
+    description: Dostęp do wszystkich funkcji administratora
+    default: op
+    children:
+      enhance.admin.simulate: true
+      enhance.admin.reload: true
+      enhance.admin.give: true
+  enhance.admin.simulate:
+    description: Pozwala na symulację ulepszeń
+    default: false
+  enhance.admin.reload:
+    description: Pozwala na przeładowanie konfiguracji
+    default: false
+  enhance.admin.give:
+    description: Pozwala na dawanie materiałów testowych
+    default: false

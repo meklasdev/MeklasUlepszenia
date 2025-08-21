@@ -1,0 +1,5 @@
+/workspace/src/test/java/pl/meklas/enhance/model/EnhancementDataTest.java
+/workspace/src/test/java/pl/meklas/enhance/util/RandomProviderTest.java
+/workspace/src/test/java/pl/meklas/enhance/model/PathTypeTest.java
+/workspace/src/test/java/pl/meklas/enhance/integration/PathTypeIntegrationIT.java
+/workspace/src/test/java/pl/meklas/enhance/integration/SimpleIntegrationIT.java

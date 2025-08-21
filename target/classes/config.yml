@@ -1,0 +1,40 @@
+# Konfiguracja główna pluginu Wzmocnienia Przedmiotów
+
+# Czy używać Vault do ekonomii (jeśli false, używa tylko materiałów)
+useVault: true
+
+# Maksymalny procent redukcji obrażeń z ścieżki DEFENSE
+maxDefensePercent: 20
+
+# Dźwięki
+soundSuccess: ENTITY_PLAYER_LEVELUP
+soundFail: BLOCK_ANVIL_BREAK
+
+# Konfiguracja GUI
+gui:
+  titleInfo: "&8[&aWzmocnienia&8]"
+  titleUpgrade: "&8[&eUlepszanie&8]"
+  size: 54
+  slots:
+    inputItem: 20
+    inputMaterial: 29
+    pathButtons: [24, 33, 42]
+    preview: 22
+    confirm: 26
+
+# Przedmioty zbanowane od wzmacniania
+bannedItems:
+  - "ELYTRA"
+  - "SHIELD"
+
+# Materiały źródłowe - tylko opis gdzie je zdobyć
+materialSources:
+  DIAMOND: "Kopalnie na poziomie Y=-59 lub handel z mieszkańcami"
+  NETHERITE_SCRAP: "Przetapianie Ancient Debris z Netheru"
+  NETHERITE_INGOT: "Crafting z 4x Netherite Scrap + 4x Gold Ingot"
+  BLAZE_ROD: "Drop z Blaze w Nether Fortress"
+  ECHO_SHARD: "Loot z Ancient City w Deep Dark"
+  NETHER_STAR: "Drop z Wither Bossa"
+  REDSTONE: "Kopalnie na poziomie Y=15 lub niżej"
+  AMETHYST_SHARD: "Geody ametystowe w jaskiniach"
+  SHULKER_SHELL: "Drop z Shulkerów w End City"

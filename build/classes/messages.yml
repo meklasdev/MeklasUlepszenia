@@ -1,0 +1,126 @@
+# Wiadomości pluginu Wzmocnienia Przedmiotów
+
+prefix: "&8[&aWzmocnienia&8] "
+
+# Błędy podstawowe
+noItem: "%prefix%&cWłóż poprawny przedmiot do wzmocnienia."
+noMaterials: "%prefix%&cBrakuje wymaganych materiałów."
+noMoney: "%prefix%&cNie masz wystarczająco monet."
+pathLocked: "%prefix%&cTen przedmiot ma już inną ścieżkę wzmocnienia."
+maxLevel: "%prefix%&cOsiągnięto maksymalny poziom dla tej ścieżki."
+bannedItem: "%prefix%&cTego przedmiotu nie można wzmacniać."
+
+# Potwierdzenia
+confirmTitle: "&ePotwierdzić ulepszenie?"
+confirmYes: "&a&lTAK"
+confirmNo: "&c&lNIE"
+
+# Wyniki
+success: "%prefix%&aUlepszenie zakończone sukcesem!"
+fail: "%prefix%&cUlepszenie nieudane. Przedmiot przepadł."
+
+# Komendy
+reloaded: "%prefix%&aPrzeładowano konfigurację."
+itemsGiven: "%prefix%&aPrzedmioty testowe zostały dodane."
+simulationResult: "%prefix%&eSymulacja: &a%success%&e sukcesów, &c%fail%&e porażek z &b%total%&e prób"
+noPermission: "%prefix%&cNie masz uprawnień: &e%permission%"
+
+# GUI - Ekran informacyjny
+gui:
+  info:
+    title: "&8[&aWzmocnienia&8]"
+    systemDesc:
+      name: "&a&lSystem Wzmocnień"
+      lore:
+        - "&7Wzmacniaj swoje zbroje i narzędzia"
+        - "&7wybierając jedną z trzech ścieżek:"
+        - "&e• &cObrona &7- redukcja obrażeń"
+        - "&e• &4Atak &7- efekty bojowe"
+        - "&e• &bUtylity &7- efekty użytkowe"
+        - ""
+        - "&6Kliknij aby otworzyć ulepszanie"
+    pathsDesc:
+      name: "&e&lŚcieżki Wzmocnień"
+      lore:
+        - "&c&lOBRONA:"
+        - "&7• Poziom 1: &c+2% redukcji obrażeń"
+        - "&7• Poziom 2: &c+4% redukcji obrażeń"
+        - "&7• Poziom 3: &c+6% redukcji obrażeń"
+        - ""
+        - "&4&lATAK:"
+        - "&7• Poziom 1: &46% szansy na Siłę I (3s)"
+        - "&7• Poziom 2: &48% szansy na Siłę II (3s)"
+        - "&7• Poziom 3: &410% szansy na Siłę II (5s)"
+        - ""
+        - "&b&lUTYLITY:"
+        - "&7• Na zbroi: &bSpeed I &7przy pełnym secie"
+        - "&7• Na narzędziu: &bHaste I &7podczas trzymania"
+    materialsDesc:
+      name: "&6&lMateriały"
+      lore:
+        - "&7Materiały można zdobyć:"
+        - "&e• Kopiąc w jaskiniach"
+        - "&e• Handlując z mieszkańcami"
+        - "&e• Walcząc z mobami"
+        - "&e• Eksplorując struktury"
+        - ""
+        - "&7Szczegóły w konfiguracji serwera"
+
+  # Ekran ulepszania
+  upgrade:
+    title: "&8[&eUlepszanie&8]"
+    inputItem:
+      name: "&a&lWłóż przedmiot"
+      lore:
+        - "&7Umieść tutaj przedmiot"
+        - "&7który chcesz ulepszyć"
+    inputMaterial:
+      name: "&e&lMateriały"
+      lore:
+        - "&7Umieść wymagane materiały"
+        - "&7lub zostaw puste"
+    pathDefense:
+      name: "&c&lŚcieżka Obrony"
+      lore:
+        - "&7Redukuje otrzymywane obrażenia"
+        - "&7Poziom 1: &c+2%"
+        - "&7Poziom 2: &c+4%"
+        - "&7Poziom 3: &c+6%"
+    pathOffense:
+      name: "&4&lŚcieżka Ataku"
+      lore:
+        - "&7Szansa na efekt przy ataku"
+        - "&7Poziom 1: &46% - Siła I (3s)"
+        - "&7Poziom 2: &48% - Siła II (3s)"
+        - "&7Poziom 3: &410% - Siła II (5s)"
+    pathUtility:
+      name: "&b&lŚcieżka Utility"
+      lore:
+        - "&7Efekty użytkowe"
+        - "&7Zbroja: Speed I przy pełnym secie"
+        - "&7Narzędzie: Haste I podczas trzymania"
+    preview:
+      name: "&6&lPodgląd"
+      lore:
+        - "&7Tutaj zobaczysz efekt"
+        - "&7po ulepszeniu"
+    confirm:
+      name: "&a&lULEPSZ"
+      lore:
+        - "&7Kliknij aby rozpocząć"
+        - "&7proces ulepszania"
+    glass:
+      name: " "
+
+# Lore przedmiotów
+lore:
+  pathName:
+    DEFENSE: "&cObrona"
+    OFFENSE: "&4Atak"
+    UTILITY: "&bUtility"
+  pathEffect:
+    DEFENSE: "&7Redukcja obrażeń: &c+%effect%%"
+    OFFENSE: "&7Szansa na efekt: &4%effect%% &7(%duration%s)"
+    UTILITY: "&7Efekt użytkowy aktywny"
+  nextLevel: "&7Następny poziom: &e%chance%% &7szansy"
+  maxLevel: "&7&oMaksymalny poziom osiągnięty"

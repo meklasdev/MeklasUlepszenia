@@ -1,0 +1,17 @@
+/workspace/src/main/java/pl/meklas/enhance/gui/UpgradeGui.java
+/workspace/src/main/java/pl/meklas/enhance/model/EnhancementData.java
+/workspace/src/main/java/pl/meklas/enhance/EnhancePlugin.java
+/workspace/src/main/java/pl/meklas/enhance/gui/GuiBuilder.java
+/workspace/src/main/java/pl/meklas/enhance/config/ConfigManager.java
+/workspace/src/main/java/pl/meklas/enhance/command/EnhanceCommand.java
+/workspace/src/main/java/pl/meklas/enhance/service/LoreService.java
+/workspace/src/main/java/pl/meklas/enhance/service/CostService.java
+/workspace/src/main/java/pl/meklas/enhance/util/ItemNBT.java
+/workspace/src/main/java/pl/meklas/enhance/listener/UtilityListener.java
+/workspace/src/main/java/pl/meklas/enhance/util/RandomProvider.java
+/workspace/src/main/java/pl/meklas/enhance/model/PathType.java
+/workspace/src/main/java/pl/meklas/enhance/listener/DamageListener.java
+/workspace/src/main/java/pl/meklas/enhance/integration/VaultHook.java
+/workspace/src/main/java/pl/meklas/enhance/config/Messages.java
+/workspace/src/main/java/pl/meklas/enhance/service/EnhancementService.java
+/workspace/src/main/java/pl/meklas/enhance/gui/InfoGui.java
